@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raza Reservation Page</title>
+    <link rel="stylesheet" href="./css files/styles.css">
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <nav class="navigation">
+    <button class="toggle-button" onclick="toggleNav()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+     </button>
+    <div class="logo-container" >
+        <img class="logo" src="./image files/logo.png" alt="Raza Restaurant Logo">
+    </div> 
+    <a class="active" href="homepage.html" target="main_page">Home</a>
+    <a href="menu.html" target="main_page">Menu</a>
+    <a href="reservation.html" target="main_page">Reservations</a>
+    <a href="about.html" target="main_page">About</a>
+    <a href="contact.html" target="main_page">Contact us</a>
+</nav>
+</div>
+  <div class="body_reservation">
+    <div class="container">
+        <div class="Reservation">
+            <h1>Restaurant Reservation Form</h1>
+            <form id="reservation-form">
+              <div class="form-group">
+                <label for="first-name">Name</label>
+                <div class="name-inputs">
+                  <input type="text" id="first-name" name="first-name" placeholder="First" required>
+                  <input type="text" id="last-name" name="last-name" placeholder="Last" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="### ### ####" required>
+              </div>
+              <div class="form-group">
+                <label for="reservation-date">Reservation Date</label>
+                <input type="date" id="reservation-date" name="reservation-date" required>
+              </div>
+              <div class="form-group">
+                <label for="reservation-time">Reservation Time</label>
+                <input type="time" id="reservation-time" name="reservation-time" required>
+              </div>
+              <div class="form-group">
+                <label for="number-of-persons">How many people will you be with?</label>
+                <input type="number" id="number-of-persons" name="number-of-persons" required>
+              </div>
+              <div class="form-group">
+                <label for="notes">Notes</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+    </div>
+    <script src="./javascript files/index.js"></script>
+</body>
+</html>
