@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email configuration
-    $to = "Raza@gmail.com"; // Replace with your email address
+    $to = "natuabrahm1@gmail.com"; // Replace with your email address
     $subject = "Contact Form Submission from $name";
     $emailContent = "Name: $name\nEmail: $email\n\nMessage:\n$message";
     $headers = "From: $email";
